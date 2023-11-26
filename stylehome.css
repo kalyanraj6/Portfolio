@@ -1,0 +1,177 @@
+body {
+    font-family: "Arial", sans-serif;
+    background: black;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F9CE63;
+    position: relative;
+}
+
+.nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.nav ul li:hover a {
+    color: #F9CE63;
+}
+
+.nav ul li a:hover::before {
+    width: 100%;
+}
+
+.nav ul li a::before {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid gold;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.icons button:hover {
+    color: #001F3F;
+    background-color: gold;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.tagline h1 {
+    font-size: 85px;
+    color: white;
+    margin-bottom: 10px;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.tagline .word {
+    display: block;
+}
+
+.tagline .execute {
+    color: white;
+    position: relative;
+}
+
+.tagline .execute::before {
+    content: '';
+    height: 3px;
+    width: calc(100% - 50px); /* Adjusted width */
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.footer h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer h3 span {
+    font-size: 1.5em;
+    color: #08FCF9;
+}
+
+.photo-container {
+    position: absolute;
+    top: 50%;
+    right: 15%; /* Adjusted right position */
+    transform: translateY(-50%);
+}
+
+.profile-photo {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 70%; /* Make the image circular */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Add a suitable shadow */
+}

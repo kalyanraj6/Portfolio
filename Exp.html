@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experience</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .nav {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #F9CE63;
+            position: relative;
+        }
+
+        .nav ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .nav ul li:hover::after {
+            width: 100%;
+        }
+
+        .nav ul li:hover a {
+            color: #F9CE63;
+        }
+
+        .nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        .nav ul li a::before {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: white;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: calc(33.33% - 40px);
+            margin: 20px;
+            box-shadow: 2px 2px 20px pink;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto; /* Adjusted to make images responsive */
+        }
+
+        .card h2,
+        .card p {
+            margin: 10px;
+            text-align: justify;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <img src="logo.png" alt="Logo">
+    <ul>
+        <li><a href="cov.html">Home</a></li>
+        <li><a href="certi.html">Certifications</a></li>
+        <li><a href="a.html">Projects</a></li>
+        <li><a href="Exp.html">Experience</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<div class="container">
+    <div class="card">
+        <img src="cis.png" alt="Project 1">
+        <h2>1: Cisco Virtual Internship</h2>
+        <p>
+            • Successfully completed a comprehensive virtual internship program with a strong focus on Networking Essentials and the Basics of Cybersecurity.<br><br>
+            • Demonstrated expertise by actively participating in and making significant contributions to a challenging project during the internship program, resulting in an impressive project review score of 90%.
+        </p>
+    </div>
+    <div class="card">
+        <img src="del.png" alt="Project 2">
+        <h2>2:Deloitte Experience Program  </h2>
+        <p>
+            • Engaged in a comprehensive program encompassing various disciplines including coding, data analysis, development, cybersecurity, and forensic technology.<br><br>
+            • Demonstrated proficiency in coding, showcasing the ability to develop and implement solutions and acquired skills in data analysis, employing analytical techniques<br>
+        </p>
+    </div>
+    <div class="card">
+        <img src="acc.png" alt="Project 3">
+        <h2>3: Accenture Experience Program</h2>
+        <p>
+            • Demonstrated proficiency in reading and understanding code, attention to detail, and debugging algorithms.<br><br>
+            • Conducted unit testing, user acceptance testing (UAT), and security maturity assessments. Acquired knowledge and experience in implementing IAM policies and permissions and securing SDLC.
+        </p>
+    </div>
+</div>
+</body>
+</html>

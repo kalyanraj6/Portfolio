@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav ul li {
+      position: relative;
+      margin: 0 20px;
+    }
+
+    .nav ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #F9CE63;
+      position: relative;
+      padding-bottom: 10px; /* Increased space between text and underline */
+    }
+
+    .nav ul li a::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px; /* Made the line somewhat bolder */
+      bottom: 0;
+      left: 0;
+      background-color: white; /* Changed the line color to white */
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav ul li a:hover::before {
+      visibility: visible;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      width: 90%;
+      max-width: 400px;
+      margin: 20px;
+      box-shadow: 2px 2px 20px pink;
+      overflow: hidden;
+      background-color: #333;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h2,
+    .card p {
+      margin: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body style="background-color: black;">
+  <div class="nav">
+    <img src="logo.png" alt="Logo" style="width: 150px; height: 150px;">
+    <ul>
+      <li><a href="cov.html">Home</a></li>
+      <li><a href="certi.html">Certifications</a></li>
+      <li><a href="a.html">Projects</a></li>
+      <li><a href="Exp.html">Experience</a></li>
+      <li><a href="skill.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="card">
+      <img src="p1.png" alt="Project 1">
+      <h2>Water Trash Collector</h2>
+      <p>Developed an Android app for an IoT device, achieving a 94% debris removal rate, significantly improving water body cleanliness.</p>
+    </div>
+    <div class="card">
+      <img src="p2.jpg" alt="Project 2">
+      <h2>AU Platform</h2>
+      <p>Led the full-stack development of a robust website, showcasing 50+ endorsed projects, exposing 100+ students to inventive concepts.</p>
+    </div>
+    <div class="card">
+      <img src="p3.jpg" alt="Project 3">
+      <h2>Pharmaceutical UAV</h2>
+      <p>Conceptualized a UAV for medicine delivery, achieving a 90% increase in delivery efficiency and an 80% reduction in delivery time.</p>
+    </div>
+
+
+    <div class="card">
+      <img src="p4.jpg" alt="Project 4">
+      <h2>4: Portfolio</h2>
+      <p>A portfolio website is a compilation of academic and professional materials that exemplify my beliefs, skills, qualifications, education, training, and experiences. It provides insight about my personality and work ethic.</p>
+    </div>
+    <div class="card">
+      <img src="p5.png" alt="Project 5">
+      <h2>5: Pharmaceutical Drone</h2>
+      <p>Designed a pharmaceutical delivery drone to deliver medicines without human involvement. It also has a website for customer and seller interaction in getting the details i.e GPS coordinates & medicine details.</p>
+    </div>
+    <!-- Add more cards for additional projects -->
+  </div>
+</body>
+</html>

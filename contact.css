@@ -1,0 +1,220 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: black;
+}
+
+.nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* CSS for smaller screens */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F9CE63;
+}
+
+.nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.container {
+    margin: 30px;
+    width: 90%;
+    background: #EEEEEE;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+}
+
+.container .content {
+    display: flex;
+    align-items: flex-start; /* Updated alignment for better responsiveness */
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 40%; /* Adjusted width for better responsiveness */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i {
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 14px;
+    color: black;
+}
+
+.container .content .right-side {
+    width: 55%; /* Adjusted width for better responsiveness */
+    margin-left: 15px; /* Added margin for better separation */
+}
+
+.content .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="Submit"] {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="Submit"]:hover {
+    background: #5029bc;
+}
+
+/* Add CSS Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .container .content {
+        flex-direction: column;
+    }
+    .container .content .left-side,
+    .container .content .right-side {
+        width: 100%;
+        margin: 0;
+    }
+    .content .left-side::before {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav ul li {
+        margin: 0 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .container .content .left-side .details {
+        margin: 10px;
+    }
+}
